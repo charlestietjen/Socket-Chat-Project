@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "socket.io": "^4.4.1"
+  },
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "server component of a simple chat service",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "charlestietjen",
+  "license": "MIT"
+}
