@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import 'the-new-css-reset/css/reset.css';
 import './App.css';
+import Hero from './components/Hero';
+import ChatBody from './components/ChatBody';
+import ChatInput from './components/ChatInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <ChatBody />
+      <ChatInput />
     </div>
   );
 }

@@ -14,7 +14,7 @@ const startServer = function() {
     const io = socketio(server);
 
     app.use(cors({
-        origin: 'http://localhost:/8080',
+        origin: 'http://localhost:3000/',
         optionsSuccessStatus: 200
     }));
     io.on('connection', onNewWebsocketConnection);

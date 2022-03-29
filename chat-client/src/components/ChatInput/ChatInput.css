@@ -1,0 +1,16 @@
+.ChatInput{
+    display: flex;
+    position: bottom;
+    height: 11vh;
+    /* width: 100vw; */
+    justify-content: center;
+    justify-self: flex-end;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+}
+
+.input-box{
+    background-color: white;
+    width: 80vw;
+    height: 10vh;
+}
