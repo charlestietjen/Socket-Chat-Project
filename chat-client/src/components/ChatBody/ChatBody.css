@@ -2,6 +2,7 @@
     height: 80vh;
     background-color: rgb(34, 34, 34);
     display: flex;
+    overflow: scroll;
 }
 
 .message-container{

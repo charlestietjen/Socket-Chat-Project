@@ -1,5 +1,9 @@
 const onlineClients = new Set();
 
+const chatMessageHandler = function(msg){
+    console.info(msg);
+};
+
 const onNewWebsocketConnection = function(socket){
     console.info(`Socket ${socket.id} has connected.`);
     onlineClients.add(socket.id);
@@ -11,6 +15,8 @@ const onNewWebsocketConnection = function(socket){
 
     socket.on('hello', helloMsg => console.info(`Socket ${socket.id} says: "${helloMsg}"`));
     socket.emit('welcome', 'Welcome to the chat server!');
+    socket.on('chatMessage', chatMessageHandler)
+    // socket.on('chatMessage', msg => console.info(msg))
 };
 
-module.exports = onNewWebsocketConnection;
+module.exports = { onNewWebsocketConnection };
