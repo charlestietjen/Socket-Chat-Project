@@ -1,6 +1,6 @@
 {
   "name": "chat-client",
-  "homepage": "/socket.io-chat-client",
+  "homepage": "/Socket-Chat-Project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
