@@ -19,9 +19,9 @@ const startServer = function() {
     });
     
     io.on('connection', onNewConnection);
-    mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/chat-server-db', () => {
-        console.log('Database connected')
-    })
+    // mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/chat-server-db', () => {
+    //     console.log('Database connected')
+    // })
     httpServer.listen(PORT, () => {
         console.log(`Listening on port: ${PORT}`);
     });
