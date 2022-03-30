@@ -1,6 +1,6 @@
 {
   "name": "chat-client",
-  "homepage": "https://github.com/charlestietjen/socket.io-chat-client",
+  "homepage": "/socket.io-chat-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

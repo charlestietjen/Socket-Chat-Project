@@ -1,6 +1,6 @@
 import io from 'socket.io-client';
 
-export const socket = io('http://localhost:8080/');
+export const socket = io('https://not-discord-chat-server.herokuapp.com/');
 
 socket.on('connect', () => socket.emit('hello', `${socket.id} has arrived!`));
 socket.on('welcome', msg => {console.log(msg)})
