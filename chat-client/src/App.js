@@ -3,13 +3,15 @@ import './App.css';
 import Hero from './components/Hero';
 import ChatBody from './components/ChatBody';
 import ChatInput from './components/ChatInput';
+import EnterName from './components/EnterName';
 
 function App() {
   return (
     <div className="App">
       <Hero />
-      <ChatBody />
-      <ChatInput />
+      <EnterName />
+      {/* <ChatBody room='goblinhours' />
+      <ChatInput room='goblinhours' /> */}
     </div>
   );
 }
