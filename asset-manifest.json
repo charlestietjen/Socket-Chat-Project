@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/charlestietjen/socket.io-chat-client/static/css/main.de25f2fb.css",
-    "main.js": "/charlestietjen/socket.io-chat-client/static/js/main.7db5d1f8.js",
-    "static/js/787.19a6038e.chunk.js": "/charlestietjen/socket.io-chat-client/static/js/787.19a6038e.chunk.js",
-    "index.html": "/charlestietjen/socket.io-chat-client/index.html",
-    "main.de25f2fb.css.map": "/charlestietjen/socket.io-chat-client/static/css/main.de25f2fb.css.map",
-    "main.7db5d1f8.js.map": "/charlestietjen/socket.io-chat-client/static/js/main.7db5d1f8.js.map",
-    "787.19a6038e.chunk.js.map": "/charlestietjen/socket.io-chat-client/static/js/787.19a6038e.chunk.js.map"
+    "main.css": "/socket.io-chat-client/static/css/main.de25f2fb.css",
+    "main.js": "/socket.io-chat-client/static/js/main.0f3ecdaa.js",
+    "static/js/787.19a6038e.chunk.js": "/socket.io-chat-client/static/js/787.19a6038e.chunk.js",
+    "index.html": "/socket.io-chat-client/index.html",
+    "main.de25f2fb.css.map": "/socket.io-chat-client/static/css/main.de25f2fb.css.map",
+    "main.0f3ecdaa.js.map": "/socket.io-chat-client/static/js/main.0f3ecdaa.js.map",
+    "787.19a6038e.chunk.js.map": "/socket.io-chat-client/static/js/787.19a6038e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de25f2fb.css",
-    "static/js/main.7db5d1f8.js"
+    "static/js/main.0f3ecdaa.js"
   ]
 }
