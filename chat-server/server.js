@@ -10,11 +10,12 @@ const startServer = function() {
     // initialize express, create an http server and wrap the express app, bind socket.io to the server
     const app = express();
     const PORT = process.env.PORT || 3001;
+    const origin = process.env.ORIGIN || "http://localhost:3000"
     // app.use(cors());
     const httpServer = createServer(app);
     const io = new Server(httpServer, {
         cors: {
-            origin: "http://localhost:3000"
+            origin: origin
         }
     });
     
