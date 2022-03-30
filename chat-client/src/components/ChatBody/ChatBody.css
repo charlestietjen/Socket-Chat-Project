@@ -1,0 +1,19 @@
+.ChatBody{
+    height: 80vh;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    overflow: scroll;
+}
+
+.message-container{
+    /* background-color: rgb(32, 32, 32); */
+    margin: 0.8vh;
+}
+
+.message-author{
+    color: rgb(87, 170, 31);
+}
+
+.message-body{
+    color:rgb(255, 255, 255)
+}
