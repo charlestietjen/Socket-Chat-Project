@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 require('dotenv').config()
-const { onNewWebsocketConnection } = require('./controllers/');
+const { onNewConnection } = require('./controllers/');
 
 const startServer = function() {
     // initialize express, create an http server and wrap the express app, bind socket.io to the server
@@ -18,7 +18,7 @@ const startServer = function() {
         }
     });
     
-    io.on('connection', onNewWebsocketConnection);
+    io.on('connection', onNewConnection);
     mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/chat-server-db', () => {
         console.log('Database connected')
     })

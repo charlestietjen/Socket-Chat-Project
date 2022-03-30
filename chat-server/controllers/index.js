@@ -1,3 +1,3 @@
-const { onNewWebsocketConnection } = require('./socket-controller');
+const { onNewConnection } = require('./socket-controller');
 
-module.exports = { onNewWebsocketConnection }
+module.exports = { onNewConnection }
