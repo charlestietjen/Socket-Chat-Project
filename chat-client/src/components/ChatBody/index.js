@@ -1,5 +1,5 @@
 import './ChatBody.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { socket } from '../../controllers/socket';
 
 export default function ChatBody(props){
@@ -8,6 +8,7 @@ export default function ChatBody(props){
         return Math.floor(Math.random() * 65535);
     }
     const [messages, setMessages] = useState([])
+    const bottomRef = useRef(null);
     useEffect(() => {
     socket.on(props.room, msg => {
         console.log(msg);
@@ -16,16 +17,18 @@ export default function ChatBody(props){
             ...prevMessages,
             newMessage
         ]);
+        bottomRef.current.scrollIntoView({ behavior: 'smooth' });
     })}, [])
     return (
         <div className='ChatBody'>
             <ul className='message-list'>
                 {messages.map(message => (
                         <li className='message-container' key={message.key}>
-                            <p className='message-author'>{message.user}</p>
-                            <p className='message-body'>{message.body}</p>
+                            <div className='message-author'>{message.user}</div>
+                            <div className='message-body'>{message.body}</div>
                         </li>
                 ))}
+                <div ref={bottomRef}></div>
             </ul>
         </div>
     )

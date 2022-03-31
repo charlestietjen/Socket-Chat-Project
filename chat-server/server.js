@@ -1,9 +1,8 @@
 const express = require('express');
-const cors = require('cors');
 const mongoose = require('mongoose');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
-require('dotenv').config()
+// require('dotenv').config()
 const { onNewConnection } = require('./controllers/');
 const routes = require('./routes/');
 const path = require('path');
@@ -11,7 +10,7 @@ const path = require('path');
 const startServer = function() {
     // initialize express, create an http server and wrap the express app, bind socket.io to the server
     const app = express();
-    const PORT = process.env.PORT || 3001;
+    const PORT = process.env.PORT || 8080;
     const origin = process.env.ORIGIN || "http://localhost:3000"
     // app.use(cors());
     const httpServer = createServer(app);

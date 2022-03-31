@@ -21,9 +21,9 @@ export default function ChatInput(props) {
     }
     return (
         <div className='ChatInput'>
-            <form className='input-form' onSubmit={submitHandler} id='input-body'>
-                <textarea className='input-box' name='body' defaultValue={body} value={body} onChange={handleChange} />
-                <button type='submit' className='send-button'>Send!</button>
+            <form className='input-form px-6 py-4' onSubmit={submitHandler} id='input-body'>
+                <textarea className='input-box textarea' name='body' value={body} onChange={handleChange} />
+                <button type='submit' className='send-button button mx-2'>Send!</button>
             </form>
         </div>
     )

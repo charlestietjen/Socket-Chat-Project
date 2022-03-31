@@ -1,4 +1,5 @@
 import 'the-new-css-reset/css/reset.css';
+import 'bulma/css/bulma.css';
 import './App.css';
 import Hero from './components/Hero';
 import ChatBody from './components/ChatBody';
