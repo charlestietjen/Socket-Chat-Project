@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { socket } from '../../controllers/socket';
 
 export default function ChatInput(props) {
-    const [formState, setFormState] = useState({ body: ''});
     const [message, setMessage] = useState({body: ''});
     const { body } = message;
     const { user } = props;
