@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 // require('dotenv').config()
-const { onNewConnection } = require('./controllers/');
+const { onNewConnection, chatMessageHandler } = require('./controllers/');
 const routes = require('./routes/');
 const path = require('path');
 
@@ -20,7 +20,12 @@ const startServer = function() {
         }
     });
 
-    io.on('connection', onNewConnection);
+    io.on('connection', socket => {
+        onNewConnection(socket, io)
+    });
+    // io.on('goblinhours', msg => {
+    //     console.log(msg);
+    // });
     // mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/chat-server-db', () => {
     //     console.log('Database connected')
     // })

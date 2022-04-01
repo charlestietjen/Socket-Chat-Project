@@ -15,7 +15,7 @@ export default function ChatInput(props) {
         e.preventDefault();
         const { body } = e.target;
         const message = { user: user, body: body.value};
-        console.log(message)
+        // console.log(message)
         socket.emit(props.room, message)
         setMessage({body:''})
     }
