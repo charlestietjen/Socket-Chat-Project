@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
-// require('dotenv').config()
 const { onNewConnection, chatMessageHandler } = require('./controllers/');
 const routes = require('./routes/');
 const path = require('path');

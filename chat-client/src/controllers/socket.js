@@ -1,7 +1,6 @@
 import io from 'socket.io-client';
 
-export const socket = io('localhost:8080/');
-// export const socket = io();
+export const socket = io();
 
 socket.on('connect', () => socket.emit('hello', `${socket.id} has arrived!`));
 socket.on('welcome', msg => {console.log(msg)})
